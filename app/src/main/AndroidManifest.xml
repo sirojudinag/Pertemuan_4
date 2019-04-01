@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gmail.sirojudinag.pertemuan4">
-
+    <!–-nama dari package aplikasi-->
+    
     <application
         android:allowBackup="true"
+        <!–-memberi izin untuk backup data-->
         android:icon="@mipmap/ic_launcher"
+        <!–-icon dari aplikasi dengan lokasi di @mipmap dan bernama ic_laincher-->
         android:label="@string/app_name"
+        <!–-lokasi string nama aplikasi-->
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <!–-tema dari aplikasi android-->
         <activity android:name=".MainActivity">
+        <!–-nama dari activity yang terdaftar-->
             <intent-filter>
+                <!-- menentukan jenis respon yang dapat ditanggapi oleh aktivitas atau layanan--> 
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+    <!–-tag penutup activity-->
     </application>
+    <!–-tag penutup aplication->
 
 </manifest>
+<!–-tag penutup file metadata-->
